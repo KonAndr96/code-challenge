@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+.global_wrapper {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+.page {
+  overflow: hidden;
+  position: absolute;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 1s ease-in-out;
+}
+.slide-leave-from,
+.slide-enter-to  {
+  transform: translateX(0px);
+}
+.slide-leave-to {
+  transform: translateX(100vw);
+}
+.slide-enter-from {
+  transform: translateX(-100vw);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 1.5s ease-in-out;
+}
+.fade-leave-from,
+.fade-enter-to  {
+  opacity:1;
+}
+.fade-leave-to,
+.fade-enter-from {
+  opacity: 0;
+}
